@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of Laravel Paymill.
+ *
+ * (c) Brian Faust <hello@brianfaust.de>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace BrianFaust\Paymill;
 
 use GuzzleHttp\Client as GuzzleClient;
@@ -130,7 +139,7 @@ class Client
                     break;
             }
 
-            return $this->handleResponse($response, !empty($headers));
+            return $this->handleResponse($response, ! empty($headers));
         } catch (BadResponseException $e) {
             throw new \Exception($e->getMessage(), $e->getCode());
         }
