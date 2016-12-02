@@ -11,7 +11,7 @@
 
 namespace BrianFaust\Paymill;
 
-class ServiceProvider extends \Illuminate\Support\ServiceProvider
+class PaymillServiceProvider extends \Illuminate\Support\ServiceProvider
 {
     public function register()
     {
