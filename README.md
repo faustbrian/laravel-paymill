@@ -11,15 +11,13 @@ $ composer require faustbrian/laravel-paymill
 And then include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    'BrianFaust\Paymill\ServiceProvider',
-];
+BrianFaust\Paymill\PaymillServiceProvider::class,
 ```
 
 ## Usage
 
 ``` php
-To-Do...
+...
 ```
 
 ## Security
