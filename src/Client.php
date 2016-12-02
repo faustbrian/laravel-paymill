@@ -28,7 +28,7 @@ class Client
             'base_url' => $this->baseUrl,
             'defaults' => [
                 'headers' => $this->headers,
-                'auth' => [
+                'auth'    => [
                     $secret,
                     'password',
                 ],
@@ -111,7 +111,7 @@ class Client
             switch (strtolower($method)) {
                 case 'get':
                     $response = $client->get($path, [
-                        'query' => $parameters,
+                        'query'   => $parameters,
                         'headers' => $headers,
                     ]);
                 break;
@@ -139,7 +139,7 @@ class Client
                     break;
             }
 
-            return $this->handleResponse($response, ! empty($headers));
+            return $this->handleResponse($response, !empty($headers));
         } catch (BadResponseException $e) {
             throw new \Exception($e->getMessage(), $e->getCode());
         }
