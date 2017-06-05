@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Paymill.
  *
@@ -31,7 +28,7 @@ class Client
             'base_url' => $this->baseUrl,
             'defaults' => [
                 'headers' => $this->headers,
-                'auth'    => [
+                'auth' => [
                     $secret,
                     'password',
                 ],
@@ -114,7 +111,7 @@ class Client
             switch (strtolower($method)) {
                 case 'get':
                     $response = $client->get($path, [
-                        'query'   => $parameters,
+                        'query' => $parameters,
                         'headers' => $headers,
                     ]);
                 break;
