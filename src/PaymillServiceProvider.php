@@ -13,6 +13,9 @@ namespace BrianFaust\Paymill;
 
 class PaymillServiceProvider extends \Illuminate\Support\ServiceProvider
 {
+    /**
+     * Register any application services.
+     */
     public function register()
     {
         $this->app->singleton('paymill', function ($app) {
