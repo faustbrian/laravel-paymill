@@ -141,7 +141,7 @@ class Client
                     break;
             }
 
-            return $this->handleResponse($response, ! empty($headers));
+            return $this->handleResponse($response, !empty($headers));
         } catch (BadResponseException $e) {
             throw new \Exception($e->getMessage(), $e->getCode());
         }
