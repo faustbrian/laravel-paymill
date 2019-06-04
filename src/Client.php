@@ -5,13 +5,13 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Paymill.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Paymill;
+namespace Artisanry\Paymill;
 
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\BadResponseException;
@@ -20,7 +20,7 @@ class Client
 {
     private $baseUrl = 'https://api.paymill.com/v2.1/';
 
-    private $headers = ['User-Agent' => 'BrianFaust-Paymill/1.0.0'];
+    private $headers = ['User-Agent' => 'Artisanry-Paymill/1.0.0'];
 
     private $httpClient;
 
@@ -40,7 +40,7 @@ class Client
 
     public function api($class)
     {
-        $class = 'BrianFaust\\Paymill\\Endpoints\\'.$class;
+        $class = 'Artisanry\\Paymill\\Endpoints\\'.$class;
 
         return new $class($this);
     }

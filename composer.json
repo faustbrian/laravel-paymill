@@ -1,12 +1,12 @@
 {
-    "name": "faustbrian/laravel-paymill",
+    "name": "artisanry/paymill",
     "description": "Paymill API for Laravel 5.",
-    "keywords": ["laravel", "framework", "Laravel-messageable", "Laravel Messageable", "Brian Faust", "faustbrian", "laravel-paymill"],
+    "keywords": ["laravel", "framework", "Laravel-messageable", "Laravel Messageable", "laravel-paymill"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
+        "email": "hello@basecode.sh",
+        "homepage": "https://basecode.sh"
     }],
     "require": {
         "php": "^7.1",
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Paymill\\": "src/"
+            "Artisanry\\Paymill\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Paymill\\": "tests"
+            "Artisanry\\Tests\\Paymill\\": "tests"
         }
     },
     "config": {
@@ -38,7 +38,7 @@
         },
         "laravel": {
             "providers": [
-                "BrianFaust\\Paymill\\PaymillServiceProvider"
+                "Artisanry\\Paymill\\PaymillServiceProvider"
             ]
         }
     },
