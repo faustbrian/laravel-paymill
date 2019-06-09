@@ -8,7 +8,7 @@
         "Laravel Messageable",
         "laravel-paymill"
     ],
-    "license": "MIT",
+    "license": "MPL-2.0",
     "authors": [
         {
             "name": "Brian Faust",
